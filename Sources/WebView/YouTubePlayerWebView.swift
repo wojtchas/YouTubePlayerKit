@@ -74,7 +74,7 @@ final public class YouTubePlayerWebView: WKWebView {
     
     #if os(iOS)
     /// Layout Subviews
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         // Send frame on Layout Subject
         self.layoutLifecycleSubject.send(self.frame)

@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - YouTubePlayer+JavaScriptEvent
 
-extension YouTubePlayer {
+public extension YouTubePlayer {
     
     /// A YouTubePlayer JavaScriptEvent
     struct JavaScriptEvent: Codable, Hashable {

@@ -3,7 +3,7 @@ import WebKit
 
 // MARK: - YouTubePlayerWebView+WKUIDelegate
 
-public extension YouTubePlayerWebView: WKUIDelegate {
+extension YouTubePlayerWebView: WKUIDelegate {
     
     /// WebView create WebView with configuration for navigation action
     /// - Parameters:
@@ -11,7 +11,7 @@ public extension YouTubePlayerWebView: WKUIDelegate {
     ///   - configuration: The WKWebViewConfiguration
     ///   - navigationAction: The WKNavigationAction
     ///   - windowFeatures: The WKWindowFeatures
-    func webView(
+    public func webView(
         _ webView: WKWebView,
         createWebViewWith configuration: WKWebViewConfiguration,
         for navigationAction: WKNavigationAction,
