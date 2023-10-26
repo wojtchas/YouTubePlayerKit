@@ -3,7 +3,7 @@ import WebKit
 
 // MARK: - YouTubePlayerWebView+WKNavigationDelegate
 
-extension YouTubePlayerWebView: WKNavigationDelegate {
+public extension YouTubePlayerWebView: WKNavigationDelegate {
     
     /// WebView decide policy for NavigationAction
     /// - Parameters:
@@ -77,7 +77,7 @@ extension YouTubePlayerWebView: WKNavigationDelegate {
 
 // MARK: - YouTubePlayerWebView+validURLRegularExpressions
 
-private extension YouTubePlayerWebView {
+public extension YouTubePlayerWebView {
     
     /// The valid URL RegularExpressions
     /// Source: https://github.com/youtube/youtube-ios-player-helper/blob/ff5991e6e3188867fe2738aa92913a37127f8f1d/Classes/YTPlayerView.m#L59

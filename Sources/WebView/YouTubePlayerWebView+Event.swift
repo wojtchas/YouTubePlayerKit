@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - YouTubePlayerWebView+Event
 
-extension YouTubePlayerWebView {
+public extension YouTubePlayerWebView {
     
     /// A YouTubePlayerWebView Event
     enum Event {

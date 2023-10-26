@@ -3,7 +3,7 @@ import WebKit
 
 // MARK: - YouTubePlayerWebView+WKUIDelegate
 
-extension YouTubePlayerWebView: WKUIDelegate {
+public extension YouTubePlayerWebView: WKUIDelegate {
     
     /// WebView create WebView with configuration for navigation action
     /// - Parameters:

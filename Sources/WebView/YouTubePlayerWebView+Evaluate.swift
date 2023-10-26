@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - YouTubePlayerWebView+JavaScript
 
-extension YouTubePlayerWebView {
+public extension YouTubePlayerWebView {
     
     /// A JavaScript
     struct JavaScript: Codable, Hashable {
@@ -28,7 +28,7 @@ extension YouTubePlayerWebView {
 
 // MARK: - YouTubePlayerWebView+JavaScript+player
 
-extension YouTubePlayerWebView.JavaScript {
+public extension YouTubePlayerWebView.JavaScript {
    
     /// Bool value if the JavaScript contains a YouTube player usage e.g. function call or property access
     var containsPlayerUsage: Bool {
@@ -58,7 +58,7 @@ extension YouTubePlayerWebView.JavaScript {
 
 // MARK: - YouTubePlayerWebView+JavaScript+embedInAnonymousFunction
 
-extension YouTubePlayerWebView.JavaScript {
+public extension YouTubePlayerWebView.JavaScript {
     
     /// Embed JavaScript in an anonymous function
     func embedInAnonymousFunction() -> Self {
@@ -69,7 +69,7 @@ extension YouTubePlayerWebView.JavaScript {
 
 // MARK: - YouTubePlayerWebView+evaluate
 
-extension YouTubePlayerWebView {
+public extension YouTubePlayerWebView {
     
     /// Evaluates the given JavaScript and converts the JavaScript result
     /// by using the supplied `JavaScriptEvaluationResponseConverter` to the given `Response` type
@@ -172,7 +172,7 @@ extension YouTubePlayerWebView {
 
 // MARK: - YouTubePlayerWebView+JavaScriptEvaluationResponseConverter
 
-extension YouTubePlayerWebView {
+public extension YouTubePlayerWebView {
     
     /// A generic JavaScript evaluation response converter
     struct JavaScriptEvaluationResponseConverter<Output> {
@@ -223,7 +223,7 @@ extension YouTubePlayerWebView {
 
 // MARK: - JavaScriptEvaluationResponseConverter+Empty
 
-extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter where Output == Void {
+public extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter where Output == Void {
     
     /// An empty JavaScriptEvaluationResponseConverter
     static let empty = Self { _, _ in .success(())  }
@@ -232,7 +232,7 @@ extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter where Outpu
 
 // MARK: - JavaScriptEvaluationResponseConverter+typeCast
 
-extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
+public extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
     
     /// Type-Cast the JavaScript Response to a new Output type
     /// - Parameters:
@@ -266,7 +266,7 @@ extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
 
 // MARK: - JavaScriptEvaluationResponseConverter+rawRepresentable
 
-extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
+public extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
     
     /// Convert JavaScript Response to a RawRepresentable type
     /// - Parameters:
@@ -307,7 +307,7 @@ extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter {
 
 // MARK: - JavaScriptEvaluationResponseConverter+decode
 
-extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter where Output == [String: Any] {
+public extension YouTubePlayerWebView.JavaScriptEvaluationResponseConverter where Output == [String: Any] {
     
     /// Convert and Decode JavaScript Response to a Decodable type
     /// - Parameters:
